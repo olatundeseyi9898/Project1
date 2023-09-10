@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: aliceblue;
+}
+
+.product-container {
+  display: flex;
+  border-radius: 2px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin-top: 5%;
+}
+
+.product-image {
+  background: url(images/image-product-desktop.jpg) no-repeat center center/cover;
+  text-align: center;
+  width: 25%;
+  height: 500px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.product-details {
+  background-color: white;
+  width: 25%;
+  height: 500px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+h1 {
+  font-size: 15px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: left;
+  padding: 15px;
+  padding-left: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  letter-spacing: 8px;
+  color: darkseagreen;
+  font-weight: lighter;
+}
+
+h2 {
+  font-size: 30px;
+  font-family: 'Fraunces', serif;
+  text-align: left;
+  padding-left: 40px;
+  padding-right: 45px;
+  color: black;
+  font-weight: bold;
+  width: 191px;
+}
+
+p {
+  padding-top: 15px;
+  padding-left: 40px;
+  padding-right: 50px;
+  padding-bottom: 20px;
+  text-align: left;
+  font-size: 15px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: lighter;
+  word-spacing: 5px;
+  line-height: 25px;
+  width: 283px;
+}
+
+.price-tag {
+  display: flex;
+  padding-top: 20px;
+  padding-left: 40px;
+  padding-right: 50px;
+  padding-bottom: 40px;
+  text-align: center;
+  font-family: 'Fraunces', serif;
+}
+
+.cart-button {
+  text-align: center;
+}
+
+.current-price {
+  font-size: 25px;
+  font-weight: bold;
+  color: forestgreen;
+  padding-right: 30px;
+}
+
+.original-price {
+  text-decoration: line-through;
+  padding-top: 5px;
+}
+
+button {
+  font-weight: bold;
+  background-color: seagreen;
+  color: white;
+  width: 250px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media (max-width: 376px) {
+  .product-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  h2 {
+    width: 75%;
+  }
+
+  .product-image {
+    background: url(images/image-product-mobile.jpg) no-repeat center center/cover;
+    width: 90%;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+    height: 230px;
+  }
+  .product-details {
+    width: 90%;
+  }
+  p {
+    width: 75%;
+  }
+}
